@@ -10,7 +10,12 @@ request({url,json:true},(error,response)=> {
   callback('Unable to find location',undefined)
  }
  else {
-  callback(undefined,response.body.current.temperature)
+  callback(undefined,{
+   temperature:response.body.current.temperature,
+   feelslike:response.body.current.feelslike,
+   humidity:response.body.current.humidity,
+   is_day:response.body.current.is_day,
+  })
  }
 })
 }
