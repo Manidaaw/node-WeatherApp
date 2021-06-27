@@ -24,6 +24,6 @@ weatherForm.addEventListener('submit',(e)=> {
   messageTwo.textContent='Location is :'+data.location
   messageThree.textContent='Is this day? '+data.is_day
   messageFour.textContent='Temperature is '+data.Temperature+', but it feels like '+data.feelslike
-  messageFive.textContent='Humidity is: '+data.humidity })
+  messageFive.textContent='Humidity is: '+data.humidity+'%' })
 })
 })
