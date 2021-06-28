@@ -17,6 +17,10 @@ weatherForm.addEventListener('submit',(e)=> {
  response.json().then((data)=> {
   if(data.error) {
    messageOne.textContent=data.error
+   messageTwo.textContent=''
+   messageThree.textContent=''
+   messageFour.textContent=''
+   messageFive.textContent=''
    return console.log(data.error)
   }
   console.log(data)
